@@ -5,13 +5,19 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.var;
 
+import javax.validation.constraints.NotBlank;
+
 @Getter
 @Setter
 public class RequisicaoNovoPedido {
 
+    @NotBlank
     private String nomeProduto;
+    @NotBlank
     private String urlProduto;
+    @NotBlank
     private String urlImagem;
+
     private String descricao;
 
     public Pedido toPedido() {
