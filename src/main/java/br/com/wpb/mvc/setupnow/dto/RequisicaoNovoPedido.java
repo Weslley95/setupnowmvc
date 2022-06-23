@@ -1,6 +1,7 @@
 package br.com.wpb.mvc.setupnow.dto;
 
 import br.com.wpb.mvc.setupnow.model.Pedido;
+import br.com.wpb.mvc.setupnow.model.StatusPedido;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.var;
@@ -26,6 +27,7 @@ public class RequisicaoNovoPedido {
         pedido.setUrlProduto(urlProduto);
         pedido.setUrlImagem(urlImagem);
         pedido.setDescricao(descricao);
+        pedido.setStatusPedido(StatusPedido.AGUARDANDO);
 
         return pedido;
     }
